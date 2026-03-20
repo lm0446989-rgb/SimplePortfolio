@@ -1,0 +1,138 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url(../Images/Bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    line-height: 1.5;
+    color: white;
+    padding: 20px;
+    margin: 0; 
+    box-sizing: border-box; 
+    padding-top: 60px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    padding-left: 50px;
+}
+.logo {
+    flex: 1; 
+}
+.logo p{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+   
+}
+ .highlight{
+    color: red;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+
+}
+.main-nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 120px;
+    flex: 2;
+
+}
+.side-nav{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex: 1; 
+    justify-content: flex-end;
+    margin-right: 80px;
+}
+
+.side-nav li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 15px; 
+    border: 2px solid transparent;
+   
+  
+}
+
+.side-nav li a:hover {
+    background-color:black; 
+    color: white; 
+    border: 2px solid black; 
+    border-radius: 5px;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.main-nav a:hover{
+  color: red;
+}
+.hero{
+  
+    margin-top: 100px;
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 110px;
+    
+}
+.hero h1{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.hero p{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    
+}
+.hire-btn{
+    display: inline-block;
+    border: 2px solid white;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 10px;
+}
+.hire-btn:hover{
+    background-color: black;
+    color: white;
+
+}
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+} 
